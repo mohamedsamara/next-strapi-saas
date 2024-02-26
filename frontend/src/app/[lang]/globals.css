@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "react-slideshow-image/dist/styles.css";
+
+body {
+  @apply dark:bg-black;
+}
+
+/******************************************* 
+  Rich Text Styles
+*******************************************/
+
+/* Headers */
+.rich-text h1 {
+  @apply mb-4 text-4xl font-bold text-violet-400;
+}
+
+.rich-text h2 {
+  @apply mb-4 text-3xl font-bold text-violet-400;
+}
+
+.rich-text h3 {
+  @apply mb-4 text-2xl font-bold text-violet-400;
+}
+
+.rich-text h4 {
+  @apply mb-4 text-xl font-bold text-violet-400;
+}
+
+.rich-text h5 {
+  @apply mb-4 text-lg font-bold text-violet-400;
+}
+
+.rich-text h6 {
+  @apply mb-4 text-base font-bold text-violet-200;
+}
+
+/* Horizontal rules */
+.rich-text hr {
+  @apply my-8 border-gray-300;
+}
+
+.rich-text a {
+  @apply underline text-violet-400;
+}
+
+/* Typographic replacements */
+.rich-text p {
+  @apply mb-4;
+}
+
+/* Emphasis */
+.rich-text strong {
+  @apply font-bold;
+}
+
+.rich-text em {
+  @apply italic;
+}
+
+.rich-text del {
+  @apply line-through;
+}
+
+/* Blockquotes */
+.rich-text blockquote {
+  @apply py-2 pl-4 mb-4 border-l-4 border-gray-400;
+}
+
+/* Lists */
+.rich-text ul {
+  @apply pl-4 mb-4 list-disc;
+}
+
+.rich-text ol {
+  @apply pl-4 mb-4 list-decimal;
+}
+
+.rich-text li {
+  @apply mb-2;
+}
+
+.rich-text li > ul {
+  @apply pl-4 mb-2 list-disc;
+}
+
+.rich-text li > ol {
+  @apply pl-4 mb-2 list-decimal;
+}
+
+/* Code blocks */
+.rich-text pre {
+  @apply p-4 my-6 font-mono text-gray-100 bg-gray-900 rounded;
+}
+
+.rich-text code {
+  @apply px-2 py-1 font-mono text-gray-100 bg-gray-900 rounded;
+}
+
+/* Tables */
+.rich-text table {
+  @apply w-full my-6 border-collapse border-gray-300;
+}
+
+.rich-text th {
+  @apply px-4 py-2 font-semibold text-left bg-gray-900 border-b border-gray-300;
+}
+
+.rich-text td {
+  @apply px-4 py-2 border-b border-gray-300;
+}
+
+/* Images */
+.rich-text img {
+  @apply object-cover w-full my-6 rounded-xl;
+}
+
+/* Custom containers */
+.rich-text .warning {
+  @apply px-4 py-2 mb-4 text-yellow-700 bg-yellow-100 border-yellow-500 rounded-lg;
+}
+
+/******************************************* 
+  React Slideshow Styles
+*******************************************/
+
+.react-slideshow-container [aria-label="Previous Slide"] {
+  margin-left: 1rem;
+}
+
+.react-slideshow-container [aria-label="Next Slide"] {
+  margin-right: 1rem;
+}
